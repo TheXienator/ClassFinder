@@ -12,7 +12,8 @@
 @implementation Student
 
 @dynamic name;
-@dynamic courses;
+@dynamic fbId;
+@dynamic courseIds;
 
 + (void)load {
     [self registerSubclass];
@@ -22,20 +23,11 @@
     return @"Student";
 }
 
--(void)save {
-    [self saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
-        if (!succeeded) {
-            NSLog(error.description);
-        }
-    }];
-}
-
--(void)addCourse:(Course *)course{
-    [self.courses addObject:course];
-}
-
--(void)removeCourse:(Course *)course {
-    [self.courses removeObject:course];
++(Student *)studentWithName:(NSString *)name {
+    Student *student = [[Student alloc] init];
+    student.name = name;
+    student.courseIds = [[NSMutableArray alloc] init];
+    return student;
 }
 
 @end

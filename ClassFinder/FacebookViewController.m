@@ -7,8 +7,7 @@
 //
 
 #import "FacebookViewController.h"
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import <FBSDKCoreKit/FBSDKCorekit.h>
+#import "HomeViewController.h"
 
 @interface FacebookViewController ()
 
@@ -20,52 +19,28 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if ([FBSDKAccessToken currentAccessToken]) {
+        // User is logged in, do work such as go to next view controller.
+    }
     
     // Add a custom login button to your app
-    UIButton *myLoginButton=[UIButton buttonWithType:UIButtonTypeCustom];
-    myLoginButton.backgroundColor=[UIColor colorWithRed:59.0/255.0 green:89.0/255.0 blue:152.0/255.0 alpha:1.0];
-    myLoginButton.frame=CGRectMake(0,0,180,40);
-    myLoginButton.center = self.view.center;
-    [myLoginButton setTitle: @"Login to Facebook" forState: UIControlStateNormal];
+    self.loginButton = [[FBSDKLoginButton alloc] init];
+    self.loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+    self.loginButton.center = CGPointMake(20 + self.loginButton.frame.size.width / 2,
+                                          self.view.frame.size.height - 20 - self.loginButton.frame.size.height / 2);
+    [self.view addSubview:self.loginButton];
     
-    // Handle clicks on the button
-    [myLoginButton
-     addTarget:self
-     action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
-    
-    // Add the button to the view
-    [self.view addSubview:myLoginButton];
-    
-    //asking for permission to access public info
-    _myButton.readPermissions =
-    @[@"public_profile", @"email", @"user_friends"];
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"id, name"}]
+         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+             if (!error) {
+                 [self performSegueWithIdentifier:@"FBToHome" sender:self];
+             }
+         }];
+    } else {
+        NSLog(@"NOPE");
+    }
 }
-
-// Once the button is clicked, show the login dialog
--(void)loginButtonClicked
-{
-    NSLog(@"loginButtonClicked method");
-    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
-    
-    [login logInWithReadPermissions: @[@"public_profile"]
-                            handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-                                if (error) {
-                                    NSLog(@"Process error");
-                                } else if (result.isCancelled) {
-                                    NSLog(@"Cancelled");
-                                } else {
-                                    NSLog(@"Logged in");
-                                    
-                                    /*
-                                     
-                                     
-                                     INSERT SEGUE TO VIEW CONTROLLER
-                                     
-                                     */
-                                }
-                            }];
-}
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -82,5 +57,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

@@ -14,10 +14,9 @@
 +(NSString *)parseClassName;
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSMutableArray *courses;
+@property (nonatomic, strong) NSString *fbId;
+@property (nonatomic, strong) NSMutableArray *courseIds;
 
--(void)save;
--(void)addCourse:(Course *)course;
--(void)removeCourse:(Course *)course;
++(Student *)studentWithName:(NSString *)name;
 
 @end

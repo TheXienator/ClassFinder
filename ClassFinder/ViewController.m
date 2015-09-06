@@ -53,7 +53,7 @@
     if (self.studentTextField.text.length > 0) {
         self.currentStudent = [Student object];
         self.currentStudent.name = self.studentTextField.text;
-        self.currentStudent.courses = [NSMutableArray new];
+        self.currentStudent.courseIds = [NSMutableArray new];
         self.studentNameLabel.text = self.studentTextField.text;
         self.classesLabel.text = @"No Classes";
         self.coursesString = NULL;
@@ -65,13 +65,12 @@
     if (self.currentStudent && self.classTextField.text.length > 0) {
         Course *course = [Course object];
         course.name = self.classTextField.text;
-        [self.currentStudent addCourse:course];
         if (!self.coursesString) {
             self.coursesString = [NSMutableString new];
         } else {
             [self.coursesString appendString:@"\n"];
         }
-        [self.coursesString appendString:[NSString stringWithFormat:@"Class %lu: %@", self.currentStudent.courses.count, self.classTextField.text]];
+        [self.coursesString appendString:[NSString stringWithFormat:@"Class %lu: %@", self.currentStudent.courseIds.count, self.classTextField.text]];
         self.classesLabel.text = self.coursesString;
     }
     self.classTextField.text = @"";

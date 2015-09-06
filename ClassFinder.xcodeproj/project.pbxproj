@@ -30,8 +30,12 @@
 		9A0E097A1B9A23D30053CECF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0E09791B9A23D30053CECF /* libz.dylib */; };
 		9A0E097C1B9A23DC0053CECF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0E097B1B9A23DC0053CECF /* libsqlite3.dylib */; };
 		9A0E097F1B9A76000053CECF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0E097E1B9A76000053CECF /* FBSDKCoreKit.framework */; };
-		9A0E09821B9AA8410053CECF /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09811B9AA8410053CECF /* Student.m */; };
-		9A0E09881B9AAA0A0053CECF /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09871B9AAA0A0053CECF /* Course.m */; };
+		9A0E09AB1B9C24C70053CECF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09A41B9C24C70053CECF /* HomeViewController.m */; };
+		9A0E09AC1B9C24C70053CECF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09A61B9C24C70053CECF /* SearchViewController.m */; };
+		9A0E09AD1B9C24C70053CECF /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09A81B9C24C70053CECF /* CourseViewController.m */; };
+		9A0E09AE1B9C24C70053CECF /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09AA1B9C24C70053CECF /* FriendViewController.m */; };
+		9A0E09B31B9C24F00053CECF /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09B01B9C24F00053CECF /* Student.m */; };
+		9A0E09B41B9C24F00053CECF /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09B21B9C24F00053CECF /* Course.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,10 +79,18 @@
 		9A0E09791B9A23D30053CECF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9A0E097B1B9A23DC0053CECF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9A0E097E1B9A76000053CECF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		9A0E09801B9AA8410053CECF /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		9A0E09811B9AA8410053CECF /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		9A0E09861B9AAA0A0053CECF /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		9A0E09871B9AAA0A0053CECF /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		9A0E09A31B9C24C70053CECF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9A0E09A41B9C24C70053CECF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9A0E09A51B9C24C70053CECF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9A0E09A61B9C24C70053CECF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9A0E09A71B9C24C70053CECF /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewController.h; sourceTree = "<group>"; };
+		9A0E09A81B9C24C70053CECF /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
+		9A0E09A91B9C24C70053CECF /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
+		9A0E09AA1B9C24C70053CECF /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
+		9A0E09AF1B9C24F00053CECF /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		9A0E09B01B9C24F00053CECF /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		9A0E09B11B9C24F00053CECF /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		9A0E09B21B9C24F00053CECF /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,18 +152,26 @@
 			children = (
 				9A0E09431B9A21E90053CECF /* AppDelegate.h */,
 				9A0E09441B9A21E90053CECF /* AppDelegate.m */,
+				9A0E09AF1B9C24F00053CECF /* Student.h */,
+				9A0E09B01B9C24F00053CECF /* Student.m */,
+				9A0E09B11B9C24F00053CECF /* Course.h */,
+				9A0E09B21B9C24F00053CECF /* Course.m */,
 				9A0E09461B9A21E90053CECF /* ViewController.h */,
 				9A0E09471B9A21E90053CECF /* ViewController.m */,
-				9A0E09801B9AA8410053CECF /* Student.h */,
-				9A0E09811B9AA8410053CECF /* Student.m */,
-				9A0E09861B9AAA0A0053CECF /* Course.h */,
-				9A0E09871B9AAA0A0053CECF /* Course.m */,
 				9A0E09491B9A21E90053CECF /* Main.storyboard */,
 				9A0E094C1B9A21E90053CECF /* Images.xcassets */,
 				9A0E094E1B9A21E90053CECF /* LaunchScreen.xib */,
 				9A0E093F1B9A21E90053CECF /* Supporting Files */,
 				8BB413BB1B9BE04A0032A9C6 /* FacebookViewController.h */,
 				8BB413BC1B9BE04A0032A9C6 /* FacebookViewController.m */,
+				9A0E09A31B9C24C70053CECF /* HomeViewController.h */,
+				9A0E09A41B9C24C70053CECF /* HomeViewController.m */,
+				9A0E09A51B9C24C70053CECF /* SearchViewController.h */,
+				9A0E09A61B9C24C70053CECF /* SearchViewController.m */,
+				9A0E09A71B9C24C70053CECF /* CourseViewController.h */,
+				9A0E09A81B9C24C70053CECF /* CourseViewController.m */,
+				9A0E09A91B9C24C70053CECF /* FriendViewController.h */,
+				9A0E09AA1B9C24C70053CECF /* FriendViewController.m */,
 			);
 			path = ClassFinder;
 			sourceTree = "<group>";
@@ -305,9 +325,13 @@
 				8BB413BD1B9BE04A0032A9C6 /* FacebookViewController.m in Sources */,
 				9A0E09481B9A21E90053CECF /* ViewController.m in Sources */,
 				9A0E09451B9A21E90053CECF /* AppDelegate.m in Sources */,
+				9A0E09AD1B9C24C70053CECF /* CourseViewController.m in Sources */,
+				9A0E09B41B9C24F00053CECF /* Course.m in Sources */,
 				9A0E09421B9A21E90053CECF /* main.m in Sources */,
-				9A0E09821B9AA8410053CECF /* Student.m in Sources */,
-				9A0E09881B9AAA0A0053CECF /* Course.m in Sources */,
+				9A0E09AB1B9C24C70053CECF /* HomeViewController.m in Sources */,
+				9A0E09AC1B9C24C70053CECF /* SearchViewController.m in Sources */,
+				9A0E09AE1B9C24C70053CECF /* FriendViewController.m in Sources */,
+				9A0E09B31B9C24F00053CECF /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,10 @@
 @implementation Course
 
 @dynamic name;
+@dynamic department;
+@dynamic number;
 @dynamic description;
-@dynamic students;
+@dynamic studentIds;
 
 + (void)load {
     [self registerSubclass];
@@ -21,18 +23,6 @@
 
 +(NSString *)parseClassName {
     return @"Course";
-}
-
--(void)save {
-    [self saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
-        if (!succeeded) {
-            NSLog(error.description);
-        }
-    }];
-}
-
--(void)addStudent:(Student *)student {
-    [self.students addObject:student];
 }
 
 @end
