@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BB413BD1B9BE04A0032A9C6 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB413BC1B9BE04A0032A9C6 /* FacebookViewController.m */; };
 		8BE0D9DB1B9A9E2C0075AA59 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE0D9D91B9A9AEF0075AA59 /* FBSDKLoginKit.framework */; };
 		8BE0D9DD1B9AA1BA0075AA59 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE0D9DC1B9AA1BA0075AA59 /* FBSDKCoreKit.framework */; };
 		9A0E09421B9A21E90053CECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E09411B9A21E90053CECF /* main.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BB413BB1B9BE04A0032A9C6 /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		8BB413BC1B9BE04A0032A9C6 /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
 		8BE0D9D91B9A9AEF0075AA59 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		8BE0D9DC1B9AA1BA0075AA59 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		9A0E093C1B9A21E90053CECF /* ClassFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +150,8 @@
 				9A0E094C1B9A21E90053CECF /* Images.xcassets */,
 				9A0E094E1B9A21E90053CECF /* LaunchScreen.xib */,
 				9A0E093F1B9A21E90053CECF /* Supporting Files */,
+				8BB413BB1B9BE04A0032A9C6 /* FacebookViewController.h */,
+				8BB413BC1B9BE04A0032A9C6 /* FacebookViewController.m */,
 			);
 			path = ClassFinder;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB413BD1B9BE04A0032A9C6 /* FacebookViewController.m in Sources */,
 				9A0E09481B9A21E90053CECF /* ViewController.m in Sources */,
 				9A0E09451B9A21E90053CECF /* AppDelegate.m in Sources */,
 				9A0E09421B9A21E90053CECF /* main.m in Sources */,

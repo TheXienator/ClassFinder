@@ -11,8 +11,5 @@
 #import <FBSDKCoreKit/FBSDKCorekit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet FBSDKLoginButton *myButton;
-@property (weak, nonatomic) IBOutlet FBSDKLoginButton *myLoginButton;
-
 @end
 
